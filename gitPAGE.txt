@@ -1,0 +1,48 @@
+git push
+>git init				:초기화
+>git config user.name "깃이름"
+>git config user.email "이메일"
+>git remote add origin "git경로"	:저장소 추가
+>git add .			:전체(.)추가
+>git commit -m "first commit"	:커밋 메세지
+>git push -u ?? main		:커밋 투 ??(git경로)
+
+;;;;에러시...
+>git remote remove origin		: 연결해제
+>git remote -v			:연결상태확인
+연결해제확인후 초기화부터 다시실행
+
+---------
+1. ruby install
+2. git install
+
+bundle
+bundle update
+jekyll serve
+bundle exec jekyll serve
+
+
+참고: https://dev.to/yashnigam/create-a-free-static-website-using-github-pages-and-jekyll-41a9#chirpystarter
+-------------------------------------------------------------------------
+0. https://github.com/cotes2020/chirpy-starter/
+> use this template 버튼 새 레포 만듬
+1. 하드에 깃 클론
+2. 복제된 폴더 이동해서 bundle :관련파일설치
+3. _config.yml 내용 수정
+3. _data 폴더 안에 contact.yml 노출할 SNS 수정(이건나중에해도됨)
+4. 미리보기 bundle exec jekyll serve
+5. 127.0.0.1:4000
+6. git status
+: 변경된 파일이름 확인
+: git add "수정된파일명"  : 수정된거 다 추가  귀찮으면 add .(쩜:전체)
+7. git status : 변경사항추가확인
+8. git commit -m "init updated" : 커밋메세지작성
+9. git config --global user.name "깃이름"
+   git config --global user.email "깃이멜"
+10. git push
+
+----------------------------------------------------------------------
+4. git init
+5. git config user.name "깃이름"
+6. git config user.email "깃이멜"
+7. 
