@@ -33,15 +33,16 @@ printf("asdf");
 
 ```code
 ---
-title: ESP32,Arduino
-author: Zero
+layout: posts
+title: title
+author: 
 date: 2025-09-13 20:00:00 +0900
-categories: [Computer,Programming,Embedded]
+categories: []   # main->sub 순서대로..
 tags: []     # TAG names should always be lowercase, 띄어쓰기도 금지
 comments: true
 pin: false
 toc: true
 ---
 
-# ESP32,Arduino /embedded
+# contents..
 ```
