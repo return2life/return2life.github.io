@@ -4,24 +4,29 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> zzzzzzzzzzzzzzzz .....
+> tip .....
 {: .prompt-tip }
 
-> zzzzzzzzzzzzzzzz .....
+> info .....
 {: .prompt-info }
 
-> zzzzzzzzzzzzzzzz .....
-> {: .prompt-warning }
+> warning .....
+{: .prompt-warning }
 
-> zzzzzzzzzzzzzzzz .....
+> danger .....
 {: .prompt-danger }
 
-> info type prompt.
-> warning type prompt.
-> danger type prompt.
+> ">"...
 
 ```c
 main{
 printf("asdf");
 }
 ```
+# sharp1
+## sharp2
+### sharp3
+#### sharp4
+##### sharp5
+###### sharp6
+####### sharp7  :empty
