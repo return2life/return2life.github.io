@@ -11,7 +11,7 @@ order: 4
 {: .prompt-info }
 
 > zzzzzzzzzzzzzzzz .....
-> {: .prompt-waring }
+> {: .prompt-warning }
 
 > zzzzzzzzzzzzzzzz .....
 {: .prompt-danger }
