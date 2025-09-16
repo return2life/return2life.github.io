@@ -343,4 +343,6 @@ git push (원격 이름) --delete (원격의 브랜치 명)
 git push origin --delete from-remote
 ```
 <br>
->Reference   제대로 파는 Git & GitHub - 깃 끝.장.내.기 - Youtube 얄팍한 코딩사전   https://www.youtube.com/watch?v=1I3hMwQU6GU
+>Reference
+>제대로 파는 Git & GitHub - 깃 끝.장.내.기 - Youtube 얄팍한 코딩사전
+>https://www.youtube.com/watch?v=1I3hMwQU6GU
