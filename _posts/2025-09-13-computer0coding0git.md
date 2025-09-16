@@ -1,5 +1,5 @@
 ---
-title: git 
+title: git commands
 author: Zero
 date: 2025-09-13 20:00:00 +0900
 categories: [Computer,Git]
@@ -12,6 +12,7 @@ toc: true
 # git commands
 Git 설정 및 프로젝트 생성
 Git 최초 설정
+```code
 # 1. 유저 설정
 git config --global user.name "username"
 git config --global user.email "username@gmail.com"
@@ -23,18 +24,18 @@ git config --global user.email
 # 2. 기본 브랜치명 변경
 git config --global init.defaultBranch main
 git config --global init.defaultBranch
- 
+``` 
 
 프로젝트 생성
 프로젝트 폴더 생성 후 VS code에서 폴더 열기
 git에서 관리하지 않을 파일 설정 : .gitignore 파일 생성 후 파일에 관리하지 않을 파일 저장
 (https://git-scm.com/docs/gitignore 참조)
+```code
 ## 터미널 열어서 폴더 경로에서 git 연동 
 git init
 
 ## git 현재 상태 확인
 git status
-
 
 ## .gitignore 파일 설정
 # 모든 file.c
@@ -45,7 +46,9 @@ file.c
 
 # 모든 .c 확장자 파일
 *.c
+```
 Git에 파일 반영하기
+```code
 ## 버전에 파일 담기
 git add filename.py
 
@@ -64,21 +67,24 @@ git commit -m "comment"
 
 # 커밋 이력 확인
 git log
- 
+``` 
 
 파일에 변경사항이 있는 경우 deleted, modified, added file 모두 git add로 반영해줄 수 있다.
-
+```code
 # 파일 변경 사항 자세히 보기 k : up, j : down, :q : 닫기
 git diff
 
 # add와 commit을 한번에 하기 (untracked file이 없을 때)
 git commit -am "comment"
+```
+
 이전 버전으로 돌아가기
 Reset : 현재 버전을 지우고 이전 버전으로 돌아가기
 Revert : 현재 버전을 그대로 두고 이전 버전으로 돌아가는 commit을 새로 생성
 돌아가는 액션도 기록으로 남겨둘 필요가 있을 때
 지금까지의 변화는 살리되 특정 버전에서의 작업만 수정이 필요할 때
 특히 협업 시에는 공유된 커밋을 삭제하는 것이 매우 크리티컬하다
+```code
 ## Reset
 # 되돌아갈 시점의 커밋 해시 복사
 git reset --hard (돌아갈 커밋 해시)
@@ -86,7 +92,6 @@ git reset --hard (돌아갈 커밋 해시)
 # 백업한 git 파일로 reset 이전으로 돌아가는 경우 git은 여전히 reset이 적용된 상태를 인식한다
 # 현재 커밋 상태로 초기화. 현재는 없지만 reset하면서 다시 생성된 파일은 수동으로 삭제해준다
 git reset --hard
-
 
 ## Revert
 # 수정할 커밋의 해시를 찾는다
@@ -108,6 +113,8 @@ git revert --no-commit (수정할 커밋 해시)
 
 # 커밋되지 않은 것들을 지우고 현재 커밋 상태로 초기화하고 싶을 때
 git reset --hard
+```
+
 Branch 
 Branch는 왜 필요한가?
 Branch는 분기된 차원으로 프로젝트를 하나 이상의 모습으로 관리해야 할 때
@@ -116,6 +123,7 @@ Branch는 분기된 차원으로 프로젝트를 하나 이상의 모습으로 �
  
 
 Branch 생성/ 이동/ 삭제
+```code
 # 브랜치 생성
 git branch (신규 브랜치 명)
 
@@ -139,15 +147,14 @@ git branch -m (기존 브랜치 명) (신규 브랜치 명)
 
 # 여러 브랜치의 내역을 한번에 보기
 git log --al --decorate --oneline --graph
- 
+``` 
 
 Branch 합치기
 Merge : 두 브랜치를 한 커밋에 이어붙이는 방식
 브랜치 사용 내역을 남길 필요가 있을 때
 다른 형태의 merge도 있음
 
-
-https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+```code
 # merge로 합치기
 
 # 합쳐져서 주요 대상이 될 브랜치로 이동
@@ -157,13 +164,13 @@ git merge add-coach
 
 # 병합된 브랜치는 삭제
 git branch -d add-coach
- 
+``` 
 
 Rebase : 브랜치를 다른 브랜치에 이어붙이는 방식
 한 줄로 깔끔히 정리된 내욕을 유지하기 원할 때
 이미 팀원들과 공유한 커밋에 대해서는 사용하지 않는 것이 적합함
 
-
+```code
 # Rebase로 합치기
 # merge와 반대로 합쳐질 브랜치로 이동한다
 git switch new-teams
@@ -175,10 +182,10 @@ git merge new-teams
 
 # 합친 브랜치 삭제
 git branch -d new-teams
- 
+``` 
 
 충돌이 발생하는 경우 - 파일의 같은 위치에 다른 내용이 입력된 상황이라면?
-
+```code
 ## merge에서 충돌이 발생하는 경우
 git switch main
 git merge conflict-1
@@ -211,6 +218,8 @@ git switch main
 git merge conflict-2
 git branch -d conflict-1
 git branch -d conflict-2
+```
+
 Github 사용하기
 Personal access token 만들기 - github에 파일을 올릴 때 이 토큰이 필요함
 우측 상단의 프로필 - Settings
@@ -227,8 +236,10 @@ Repository는 프로젝트 단위로 구성
 Public : 모두에게 공개되는 프로젝트
 Private : 허용된 인원만 볼 수 있는 프로젝트
 Repository의 settings - collaborators에서 협업할 팀원 추가
+
 원격 저장소 사용하기
 git과 github 연동하기
+```code
 # 로컬에 원격 저장소 추가 후 푸시 (repository 명령어 복붙)
 
 # 여기서는 https 프로토콜 사용
@@ -251,10 +262,11 @@ git remote remove (origin 등 원격 이름)
 # Github에서 프로젝트 다운받기
 
 # 프로젝트를 다운받고자 하는 폴더에서 우클릭 - Git Bash here
-git clone (원격 저장소 주소, https://github.com/gin-girin-grim/git-practice.git)
- 
+git clone (원격 저장소 주소, https://github.com/userID/xxxxxx.git)
+``` 
 
 Push & Pull
+```code
 # 원격으로 커밋 밀어올리기 (push)
 git push
 
@@ -288,8 +300,10 @@ git pull --rebase
 # 로컬의 내역을 강제로 push 하기
 # 먼저 로컬의 충돌 전 커밋으로 reset 후
 git push --force
+```
  
 원격의 Branch 다루기
+```code
 # 로컬에서 브랜치 만들어 원격에 push 해보기
 git branch -c from-local
 
@@ -327,3 +341,8 @@ git switch -t origin/from-remote
 # 원격의 브랜치 삭제
 git push (원격 이름) --delete (원격의 브랜치 명)
 git push origin --delete from-remote
+```
+<br>
+Reference
+제대로 파는 Git & GitHub - 깃 끝.장.내.기 - Youtube 얄팍한 코딩사전
+https://www.youtube.com/watch?v=1I3hMwQU6GU
