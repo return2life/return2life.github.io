@@ -14,9 +14,9 @@
   }
 }
 
-#topbar {
-  position: fixed; /* --------  custom --------*/
+#topbar {  
   @extend %btn-color;
+  position: fixed; /* --------  custom --------*/
 
   #breadcrumb {
     font-size: 1rem;
