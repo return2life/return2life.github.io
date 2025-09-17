@@ -10,13 +10,15 @@ comments: true
 pin: false
 toc: true
 ---
-# Git & Github
- - Git 설치하기   
+## Git & Github
+- Git 설치하기   
  https://git-scm.com/downloads
 
-- GitHub에 Repository 만들기 깃허브 아이디가 없다면 아래 사이트에서 회원가입을 해야합니다. https://github.com/
+- GitHub에 Repository 만들기
+ https://github.com/
 
-Repository 생성 후
+## Repository 생성 후
+## GitHub에 접속하여 작업할 Repository에서 Code라고 써진 곳을 클릭하여 주소를 복사합니다. (xxxxx.git)
 
 > " git init, add, commit  "
 
@@ -24,11 +26,9 @@ Repository 생성 후
 (작업/업로드 할 파일 폴더 안에서 우클릭 - Git Bash Here)   
 또는 프롬프트에서 해당 경로로 진입
 
-처음일 경우 초기 설정(사용자정보)을 해주어야 합니다.   
+## 처음일 경우 초기 설정(사용자정보)을 해주어야 합니다.   
 - git config –global user.name [GitHubName]   
 - git config –global user.email [GitHubEmail]
-
-GitHub에 접속하여 작업할 Repository에서 Code라고 써진 곳을 클릭하여 주소를 복사합니다. (xxxxx.git)
 
 ```
 작업폴더에서
