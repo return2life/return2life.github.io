@@ -15,6 +15,7 @@
 }
 
 #topbar {
+  position: fixed; /* --------  custom --------*/
   @extend %btn-color;
 
   #breadcrumb {
