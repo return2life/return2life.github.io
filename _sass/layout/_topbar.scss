@@ -4,7 +4,6 @@
 @use '../abstracts/placeholders';
 
 #topbar-wrapper {
-  position: fixed; /* --------  custom --------*/
   height: v.$topbar-height;
   background-color: var(--topbar-bg);
 
