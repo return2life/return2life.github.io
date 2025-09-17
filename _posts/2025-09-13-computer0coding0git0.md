@@ -19,7 +19,7 @@ toc: true
 
 ## Repository 생성 후
 ## GitHub에 접속하여 작업할 Repository에서 Code라고 써진 곳을 클릭하여 주소를 복사합니다. (xxxxx.git)
-
+## 작업내용을 묶어서(add), 설명서를 포함(commit), 업로드(push) 한다.
 > " git init, add, commit  "
 
 - Git을 받으면 설치되는 Git Bash를 실행시켜줍시다.   
@@ -48,13 +48,12 @@ git add .
 git commit -m “message”
 
 뒤에 있는 “message”는 로그입니다. 어떤 작업을 했는지 짧게 기록하기
-```
->작업내용을 묶어서(add), 설명서를 포함(commit), 업로드(push) 한다.   
+```   
 
 첫 push일 경우   
 
 git push -u origin master   
-(현재20250901, master -> main 변경됨)   
+  
 
 여기서 origin은 아까 복사한 경로를 붙여넣기
 
@@ -73,6 +72,6 @@ git push -u origin master
 >- git commit -m "message"   
 >처음 업로드 시   
 >- git push -u  origin main   
->(origing: repo경로.git, main: 브랜치명)   
+>(origing: repo경로.git, main: 브랜치명 (현재20250901, master -> main 변경됨) )   
 >(이후는 git push 만 해도 업로드 됨)   
 ```
