@@ -1,12 +1,7 @@
 ---
 layout: page
-title: hello
+title: 
 menu: true
 order: 1
 ---
-aaa
-a
-a
-a
-a
-a
+대문이외다...
