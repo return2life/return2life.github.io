@@ -4,6 +4,7 @@
 @use '../abstracts/placeholders';
 
 #topbar-wrapper {
+  position: fixed; /* --------  custom --------*/
   height: v.$topbar-height;
   background-color: var(--topbar-bg);
 
@@ -15,8 +16,7 @@
 }
 
 #topbar {  
-  @extend %btn-color;
-  position: fixed; /* --------  custom --------*/
+  @extend %btn-color;  
 
   #breadcrumb {
     font-size: 1rem;
