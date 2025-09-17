@@ -63,6 +63,7 @@ git push -u origin master
 이후 동일 작업일 시, git push 만 해도 업로드 됨   
 : 혼자 쓸거니 심오한 사용법은 패~~~ 스~~~~  !!!!!
 
+```
 >요약   
 >처음일 경우 초기 설정(사용자정보)을 해주어야 합니다.      
 >- git config –global user.name [GitHubName]   
